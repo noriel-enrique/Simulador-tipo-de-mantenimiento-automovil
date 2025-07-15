@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación de Mantenimiento de Autos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h2>🚗 Calculadora de Mantenimiento de Autos 🛠️</h2>
+    <form id="maintenance-form">
+      <label for="client-name">👤 Nombre del Cliente:</label>
+      <input type="text" id="client-name" required>
+
+      <label for="car-brand">🚘 Marca del Auto:</label>
+      <input type="text" id="car-brand" required>
+
+      <label for="car-model">📄 Modelo del Auto:</label>
+      <input type="text" id="car-model" required>
+
+      <label for="car-plate">🔖 Placa del Auto:</label>
+      <input type="text" id="car-plate" required>
+
+      <label for="phone-number">📞 Teléfono del Cliente:</label>
+      <input type="tel" id="phone-number" required>
+
+      <label for="mileage">📊 Kilometraje Actual:</label>
+      <input type="number" id="mileage" required>
+
+      <label for="last-maintenance-date">🗓️ Fecha del Último Mantenimiento:</label>
+      <input type="date" id="last-maintenance-date" required>
+
+      <label for="comments">📝 Comentarios:</label>
+      <textarea id="comments" rows="3"></textarea>
+
+      <button type="button" onclick="calculateMaintenance()">Calcular Mantenimiento</button>
+      <button type="button" id="clear" onclick="clearForm()">Limpiar</button>
+    </form>
+
+    <div id="results"></div>
+
+    <h3>🛠️ Historial de Mantenimientos</h3>
+    <table id="history-table">
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Placa</th>
+          <th>Kilometraje</th>
+          <th>Recomendación</th>
+          <th>Partes a Cambiar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas del historial se agregarán aquí -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

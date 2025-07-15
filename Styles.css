@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('imagen/oil-change-36096_1280.png'); /* Asegúrate de usar la ruta correcta */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo de la tabla */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para el mensaje de advertencia */
+.warning {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: blink 1s step-start infinite;
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Botón de limpiar */
+button#clear {
+  background-color: #f44336;
+}
+
+button#clear:hover {
+  background-color: #e41f25;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    width: 90%;
+  }
+}
